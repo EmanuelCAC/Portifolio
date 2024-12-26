@@ -15,12 +15,16 @@ function App() {
       setScrollDown(false)
     }
 
-    if (window.scrollY < 800) {
+    if (window.scrollY < 766) {
       setIsActive('Home')
     }
 
-    if (window.scrollY >= 800) {
+    if (window.scrollY >= 766 && window.scrollY < 1552) {
       setIsActive('Skills')
+    }
+
+    if (window.scrollY >= 1552) {
+      setIsActive('Projects')
     }
   })
 
@@ -86,7 +90,7 @@ function App() {
       </section>
 
       <section id='skills'>
-        <div className='flex flex-col items-center w-full px-60 bg-slate-200 h-[93dvh] py-16'>
+        <div className='flex flex-col items-center w-full px-60 bg-slate-200 h-[100dvh] py-28'>
           <h1>
             Skills
           </h1>
@@ -160,8 +164,31 @@ function App() {
       </section>
 
       <section id='projects'>
-        <div>
-          
+        <div className='flex flex-col items-center w-full px-60 bg-slate-100 h-[100dvh] py-28'>
+          <div>
+            <h1>
+              Main Projects
+            </h1>
+
+            <div className='flex flex-row flex-wrap justify-center gap-5 py-20'>
+              <div className='max-w-[30%] min-w-[250px] rounded-xl bg-black'>
+                <div id='cardImage' className='relative'>
+                  <img className='rounded-t-xl border border-b-0 border-slate-400' src='src/assets/Educatsy.png' alt='Educatsy'/>
+                  <div className='absolute bottom-0 w-full h-0 bg-slate-200 border-l border-r border-slate-400'>
+                    <h3 className='-z-10'>
+                      Hello
+                    </h3>
+                  </div>
+                </div>
+                <div className='flex flex-row w-full'>
+                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b border-l border-t border-r border-slate-400 rounded-bl-xl hover:bg-slate-200 focus:outline-none'>Video</button>
+                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b border-l-0 border-t border-r-0 border-slate-400 hover:bg-slate-200 focus:outline-none'>Backend</button>
+                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b border-l border-t border-r border-slate-400 rounded-br-xl hover:bg-slate-200 focus:outline-none'>Frontend</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
         </div>
       </section>
     </>

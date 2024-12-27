@@ -164,29 +164,84 @@ function App() {
       </section>
 
       <section id='projects'>
-        <div className='flex flex-col items-center w-full px-60 bg-slate-100 h-[100dvh] py-28'>
+        <div className='flex flex-col items-center w-full px-60 bg-slate-100 py-28 gap-20'>
           <div>
             <h1>
               Main Projects
             </h1>
 
-            <div className='flex flex-row flex-wrap justify-center gap-5 py-20'>
-              <div className='max-w-[30%] min-w-[250px] rounded-xl bg-black'>
+            <div className='flex flex-row flex-wrap justify-center gap-5 py-20 drop-shadow-xl'>
+              <div className='max-w-[30%] min-w-[250px] rounded-[13px] bg-black border border-slate-400'>
                 <div id='cardImage' className='relative'>
-                  <img className='rounded-t-xl border border-b-0 border-slate-400' src='src/assets/Educatsy.png' alt='Educatsy'/>
-                  <div className='absolute bottom-0 w-full h-0 bg-slate-200 border-l border-r border-slate-400'>
+                  <img className='rounded-t-xl' src='src/assets/Educatsy.png' alt='Educatsy'/>
+                  <div className='absolute bottom-0 w-full h-0 bg-slate-200'>
                     <h3 className='-z-10'>
                       Hello
                     </h3>
                   </div>
                 </div>
                 <div className='flex flex-row w-full'>
-                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b border-l border-t border-r border-slate-400 rounded-bl-xl hover:bg-slate-200 focus:outline-none'>Video</button>
-                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b border-l-0 border-t border-r-0 border-slate-400 hover:bg-slate-200 focus:outline-none'>Backend</button>
-                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b border-l border-t border-r border-slate-400 rounded-br-xl hover:bg-slate-200 focus:outline-none'>Frontend</button>
+                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b-0 border-l-0 border-t border-r border-slate-400 rounded-bl-xl hover:bg-slate-200 focus:outline-none'>Video</button>
+                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b-0 border-l-0 border-t border-r-0 border-slate-400 hover:bg-slate-200 focus:outline-none'>Backend</button>
+                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b-0 border-l border-t border-r-0 border-slate-400 rounded-br-xl hover:bg-slate-200 focus:outline-none'>Frontend</button>
                 </div>
               </div>
-              
+            </div>
+          </div>
+
+          <div>
+            <h1>
+              Mini Projects
+            </h1>
+
+            <div className='flex flex-row flex-wrap justify-center gap-5 py-20 drop-shadow-xl'>
+              <div className='max-w-[30%] min-w-[250px] rounded-[13px] bg-black border border-slate-400'>
+                <div id='cardImage' className='relative'>
+                  <img className='rounded-t-xl' src='src/assets/MoviesSite.png' alt='Educatsy'/>
+                  <div className='absolute bottom-0 w-full h-0 bg-slate-200'>
+                    <h3 className='-z-10'>
+                      Hello
+                    </h3>
+                  </div>
+                </div>
+                <div className='flex flex-row w-full'>
+                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b-0 border-l-0 border-t border-r border-slate-400 rounded-bl-xl hover:bg-slate-200 focus:outline-none'>Video</button>
+                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b-0 border-l-0 border-t border-r-0 border-slate-400 hover:bg-slate-200 focus:outline-none'>Backend</button>
+                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b-0 border-l border-t border-r-0 border-slate-400 rounded-br-xl hover:bg-slate-200 focus:outline-none'>Frontend</button>
+                </div>
+              </div>
+
+              <div className='max-w-[30%] min-w-[250px] rounded-[13px] bg-black border border-slate-400'>
+                <div id='cardImage' className='relative'>
+                  <img className='rounded-t-xl' src='src/assets/HollowHeart.png' alt='Educatsy'/>
+                  <div className='absolute bottom-0 w-full h-0 bg-slate-200'>
+                    <h3 className='-z-10'>
+                      Hello
+                    </h3>
+                  </div>
+                </div>
+                <div className='flex flex-row w-full'>
+                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b-0 border-l-0 border-t border-r border-slate-400 rounded-bl-xl hover:bg-slate-200 focus:outline-none'>Video</button>
+                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b-0 border-l-0 border-t border-r-0 border-slate-400 hover:bg-slate-200 focus:outline-none'>Backend</button>
+                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b-0 border-l border-t border-r-0 border-slate-400 rounded-br-xl hover:bg-slate-200 focus:outline-none'>Frontend</button>
+                </div>
+              </div>
+
+              <div className='max-w-[30%] min-w-[250px] rounded-[13px] bg-black border border-slate-400'>
+                <div id='cardImage' className='relative'>
+                  <img className='rounded-t-xl' src='src/assets/GreenLiving.png' alt='Educatsy'/>
+                  <div className='absolute bottom-0 w-full h-0 bg-slate-200'>
+                    <h3 className='-z-10'>
+                      Hello
+                    </h3>
+                  </div>
+                </div>
+                <div className='flex flex-row w-full'>
+                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b-0 border-l-0 border-t border-r border-slate-400 rounded-bl-xl hover:bg-slate-200 focus:outline-none'>Video</button>
+                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b-0 border-l-0 border-t border-r-0 border-slate-400 hover:bg-slate-200 focus:outline-none'>Backend</button>
+                  <button className='z-0 px-0 w-full rounded-none bg-slate-50 border-b-0 border-l border-t border-r-0 border-slate-400 rounded-br-xl hover:bg-slate-200 focus:outline-none'>Frontend</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
